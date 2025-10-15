@@ -1,0 +1,108 @@
+footer {
+  background: #b00000;        /* brand red */
+  color: #fff;
+  padding: 4rem 2rem 2rem;
+  font-family: "Lato", sans-serif;
+}
+
+/* Container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* subtle */
+}
+
+/* Section Titles */
+.footer-container .top h2,
+.footer-container .bottom h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Links */
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.6rem;
+}
+
+.footer-links a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffd6d6; /* lighter hover shade */
+}
+
+/* Divider */
+.divider {
+  width: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  align-self: stretch;
+}
+
+/* Contact Info */
+.contact-info p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #ffd6d6;
+}
+
+/* Footer Logo */
+.footer-logo {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer-logo h1 {
+  font-family: 'IMPACT', sans-serif;
+  font-size: 9rem;     /* ✅ not clown size */
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;   /* ✅ cleaner branding */
+}
+
+/* Copyright */
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .divider {
+    display: none;
+  }
+
+  .footer-logo h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}

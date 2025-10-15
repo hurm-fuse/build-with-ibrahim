@@ -1,0 +1,156 @@
+/* MAIN CONTAINER */
+.get-website {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 2rem;
+    padding: 10rem 10rem;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+/* LEFT PANEL */
+.get-website .left {
+    flex: 1;
+    background: url('/red2.jpg') center/cover no-repeat;
+    border-radius: 16px;
+    padding: 3rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    min-height: 280px;
+}
+
+.get-website .left::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+}
+
+.get-website .left h1,
+.get-website .left p {
+    position: relative;
+    z-index: 1;
+}
+
+.get-website .left h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.get-website .left p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* RIGHT PANEL */
+.get-website .right {
+    flex: 1;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* FORM */
+.get-website .right form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.get-website .right form input,
+.get-website .right form textarea {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #fafafa;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.get-website .right form input:focus,
+.get-website .right form textarea:focus {
+    border-color: #a80000;
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(168, 0, 0, 0.2);
+}
+
+.get-website .right form textarea {
+    resize: none;
+    min-height: 140px;
+}
+
+/* BUTTON */
+.get-website .right form button {
+    width: 100%;
+    background: linear-gradient(135deg, #c40000, #8b0000);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+}
+
+.get-website .right form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(168, 0, 0, 0.25);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .get-website {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem;
+    }
+
+    .get-website .right {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .get-website .left {
+        text-align: center;
+        padding: 2rem 1.5rem;
+        min-height: 220px;
+    }
+
+    .get-website .left h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .get-website .left p {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .get-website .right {
+        padding: 2rem 1.5rem;
+    }
+}

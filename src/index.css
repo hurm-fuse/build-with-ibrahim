@@ -1,0 +1,27 @@
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+.socials a {
+  color: #ff0000; /* red so you stop crying */
+  margin-right: 15px;
+  display: inline-flex;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.socials a:hover {
+  color: #cc0000; /* darker red on hover */
+  transform: scale(1.1);
+}
+
+.socials a svg {
+  stroke: currentColor; /* makes Lucide icons inherit the color */
+}
+
+html, body{
+  scroll-behavior: smooth;
+}
